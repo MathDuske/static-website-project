@@ -52,3 +52,9 @@ nav ul li a {
   color: #fff;
   font-size: 13px;
 }
+
+h1 {
+    color: #fff;
+    text-align: center;
+    margin: 30px;
+}
