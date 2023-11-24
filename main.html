@@ -7,15 +7,15 @@
     <title>Mercedes Website</title>
   </head>
   <body>
-    <div class="container">
+    <div class="container" id="Home">
       <div class="navbar">
         <img src="imgs/menu/mercedes-benz-9.svg" alt="meu-logo" class="logo" />
         <nav>
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="404">Find a Store</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#404">Find a Store</a></li>
             <li><a href="about.html">About</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
         <img src="imgs/menu/search.png" alt="menu" class="search-icon" />
@@ -56,14 +56,16 @@
             <h5>Find a Shop</h5>
             <p style="color: #000">Look for the closest Dealership</p>
           </div>
+          <a  href="#socialsid" class="hidden">
           <div class="card card4">
             <h5>Socials</h5>
             <p style="color: #000">See the happiness of our customers</p>
           </div>
+          </a>
         </div>
       </div>
     </div>
-    <div class="title">
+    <div class="title" id="models">
       <h1>Models</h1>
     </div>
     <div class="models-container">
@@ -138,7 +140,7 @@
         </div>
       </div>
     </div>
-    <div class="title">
+    <div class="title" id="socialsid">
       <h1>Socials</h1>
     </div>
     <div class="social-container">
@@ -235,7 +237,7 @@
             <button class="bfooter" type="submit">Submit</button>
           </form>
         </div>
-        <div class="contact-right">
+        <div class="contact-right" id="contact">
           <h2>Current Location / Language</h2>
           <div class="location">
             <img src="imgs/footer/canada.jpg" alt="Canadian flag" />
