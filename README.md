@@ -1,4 +1,4 @@
-<!-- This website is a exemple of a Mercedes Dealership-->
+This website is a exemple of a Mercedes Dealership
 
 1 - Has a background Image in the main section with navbar
 2 - Present the models of the cars
