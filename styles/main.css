@@ -324,109 +324,115 @@ h5 {
   grid-row: 3 / 4;
 }
 
+/* Footer Section */
 footer {
   background-color: #000;
   color: #fff;
-  padding: 20px;
+  padding: 30px 0;
+  font-family: "Bebas Neue", Arial, sans-serif;
+  letter-spacing: 2px;
 }
 
-.contact-section {
+.footer-content {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
-.contact-left {
-  width: 30%;
-  font-family: Kdam Thmor Pro;
-  margin-left: 50px;
+.footer-section {
+  flex: 1;
+  margin: 0 1.25rem;
 }
 
-.contact-left h3 {
-  text-align: center;
-  font-size: 35px;
+.footer-section.about {
+  margin-bottom: 1.25rem;
+  margin-left: 3.75rem;
 }
 
-.contact-left form {
-  display: flex;
-  flex-direction: column;
+.footer-section h3 {
+  color: #66ff99;
+  font-size: 1.12rem;
 }
 
-.contact-left form label {
-  margin-bottom: 5px;
+.footer-section p {
+  margin-top: 10px;
+  font-size: 14px;
 }
 
-.contact-left form input,
-.contact-left form textarea {
-  margin-bottom: 10px;
-  padding: 8px;
+.footer-section ul {
+  list-style: none;
+  padding: 0;
 }
 
-.contact-right {
-  width: 35%;
-  font-family: Kdam Thmor Pro;
+.footer-section ul li {
+  margin-bottom: 8px;
 }
 
-.contact-right h2 {
-  font-size: 15px;
-}
-
-.location {
-  display: flex;
-  align-items: center;
-}
-
-.location img {
-  border-radius: 50%;
-  margin-right: 10px;
-  max-width: 50px;
-}
-
-.bfooter {
-  background-color: transparent;
-  color: #fff;
-  border: 1px solid #000;
-  padding: 5px 10px;
-  margin: 20px;
-  border-radius: 5px;
-  cursor: pointer;
-  font-family: Kdam Thmor Pro;
-}
-
-.bfooter:hover {
-  background-color: red;
-}
-
-.newsletter-section {
-  margin-top: 80px;
-  font-family: Overpass;
-}
-
-.bfooter {
-  background-color: #fff;
-  color: #000;
-  padding: 10px;
-  border: none;
-  border-radius: 15px;
-  cursor: pointer;
-}
-
-.copyright-section {
-  margin-top: 60px;
-}
-
-a {
-  color: #fff;
+.footer-section a {
+  color: #fff; /* Gold color, adjust as needed */
   text-decoration: none;
+  font-size: 14px;
 }
 
-.isolated-text {
+.footer-section a:hover {
+  text-decoration: underline;
+}
+
+.footer-section img {
+  width: 1.87rem; /* Adjust the size of social media icons */
+}
+
+.footer-section.logo {
   text-align: center;
 }
 
-.highlighted-text {
-  margin: 50px;
-  font-size: 75px;
-  font-weight: bold;
-  color: #FFF;
-  font-family: Kdam Thmor Pro, Verdana, sans-serif;
+.footer-section.logo img {
+  width: 5rem;
+}
+
+.footer-section.contact {
+  text-align: center;
+}
+
+.contact-button {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 15px;
+  background-color: #fff; /* Gold color, adjust as needed */
+  color: #000;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.contact-button:hover {
+  background-color: #ff0000; /* Darker gold color on hover, adjust as needed */
+}
+
+.contact-button.custom-color {
+  color: #000;
+}
+
+.footer-section.social {
+  text-align: center;
+}
+
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.social-icons img {
+  width: 30px; /* Adjust the size of social media icons */
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 10px;
+  border-top: 1px solid #555;
+  font-size: 12px;
 }

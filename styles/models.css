@@ -75,7 +75,7 @@ nav ul li a {
 }
 
 .image-container {
-  position: relative; 
+  position: relative;
 }
 
 .image {
@@ -84,7 +84,6 @@ nav ul li a {
   object-fit: cover;
   object-position: 100% center;
 }
-
 
 #image-track > .image {
   width: 40vmin;
@@ -105,14 +104,15 @@ nav ul li a {
   text-align: center;
   background: rgba(0, 0, 0, 0.5);
   padding: 20px;
-  overflow: hidden; 
-  max-height: 1.5rem; 
+  overflow: hidden;
+  max-height: 1.5rem;
   transition: max-height 0.5s ease-in-out;
 }
 
-.overlay p, .overlay button {
-  opacity: 0; 
-  transition: opacity 0.5s ease-in-out; 
+.overlay p,
+.overlay button {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
 }
 
 .overlay button {
@@ -123,11 +123,14 @@ nav ul li a {
   max-height: 100vh;
 }
 
-.image-container:hover .overlay p, .image-container:hover .overlay button {
+.image-container:hover .overlay p,
+.image-container:hover .overlay button {
   opacity: 1;
 }
 
-h2, p, button {
+h2,
+p,
+button {
   color: #fff;
   font-family: "Bebas Neue", Arial, sans-serif;
 }
@@ -141,4 +144,116 @@ button {
   background-color: #f0f2f0;
   margin: 8px;
   padding: 8px;
+}
+
+/* Footer Section */
+footer {
+  background-color: #000;
+  color: #fff;
+  padding: 30px 0;
+  font-family: "Bebas Neue", Arial, sans-serif;
+  letter-spacing: 2px;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.footer-section {
+  flex: 1;
+  margin: 0 20px;
+}
+
+.footer-section.about {
+  margin-bottom: 1.25rem;
+}
+
+.footer-section h3 {
+  color: #66ff99;
+  font-size: 18px;
+}
+
+.footer-section p {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 8px;
+}
+
+.footer-section a {
+  color: #fff; /* Gold color, adjust as needed */
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-section a:hover {
+  text-decoration: underline;
+}
+
+.footer-section img {
+  width: 1.87rem; /* Adjust the size of social media icons */
+}
+
+.footer-section.logo {
+  text-align: center;
+}
+
+.footer-section.logo img {
+  width: 5rem;
+}
+
+.footer-section.contact {
+  text-align: center;
+}
+
+.contact-button {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 15px;
+  background-color: #fff; /* Gold color, adjust as needed */
+  color: #000;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.contact-button:hover {
+  background-color: #ff0000; /* Darker gold color on hover, adjust as needed */
+}
+
+.contact-button.custom-color {
+  color: #000;
+}
+
+.footer-section.social {
+  text-align: center;
+}
+
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.social-icons img {
+  width: 30px; /* Adjust the size of social media icons */
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 10px;
+  border-top: 1px solid #555;
+  font-size: 12px;
 }
