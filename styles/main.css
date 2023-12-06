@@ -9,6 +9,7 @@ html {
   padding: 0;
 }
 
+/* Background image */
 .container {
   width: 100%;
   height: 100vh;
@@ -20,7 +21,7 @@ html {
   padding-right: 8%;
   box-sizing: border-box;
 }
-
+/* Nav bar with logo and search */
 .navbar {
   height: 12%;
   display: flex;
@@ -57,7 +58,7 @@ nav ul li a {
   color: #fff;
   font-size: 13px;
 }
-
+/* Card of the header */
 .row {
   display: flex;
   height: 88%;

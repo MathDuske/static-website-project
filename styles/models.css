@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Agbalumo&family=Bebas+Neue&family=Kdam+Thmor+Pro&family=Overpass:ital,wght@0,400;1,300&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+/* Background image */
+.container {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../imgs/menu/carsales2.jpg);
+  background-position: center;
+  background-size: cover;
+  padding-left: 6.2%;
+  padding-right: 8%;
+  box-sizing: border-box;
+}
+/* Nav bar with logo and search */
+.navbar {
+  height: 12%;
+  display: flex;
+  align-items: center;
+  font-family: "Bebas Neue", Arial, sans-serif;
+}
+
+.logo {
+  width: 50px;
+}
+
+.search-icon {
+  width: 30px;
+  height: 30px;
+  margin: 30px;
+  cursor: pointer;
+  margin-left: 40px;
+}
+
+nav {
+  flex: 1;
+  text-align: right;
+}
+
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  margin-left: 60px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 13px;
+}
+
+/* images of the effect */
+#image-track {
+  display: flex;
+  gap: 4vmin;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(0%, -50%);
+  user-select: none;
+}
+
+.image-container {
+  position: relative; 
+}
+
+.image {
+  width: 46vmin;
+  height: 58vmin;
+  object-fit: cover;
+  object-position: 100% center;
+}
+
+
+#image-track > .image {
+  width: 40vmin;
+  height: 56vmin;
+  object-fit: cover;
+  object-position: 100% center;
+}
+
+/* Text inside the images */
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  overflow: hidden; 
+  max-height: 1.5rem; 
+  transition: max-height 0.5s ease-in-out;
+}
+
+.overlay p, .overlay button {
+  opacity: 0; 
+  transition: opacity 0.5s ease-in-out; 
+}
+
+.overlay button {
+  cursor: pointer;
+}
+
+.image-container:hover .overlay {
+  max-height: 100vh;
+}
+
+.image-container:hover .overlay p, .image-container:hover .overlay button {
+  opacity: 1;
+}
+
+h2, p, button {
+  color: #fff;
+  font-family: "Bebas Neue", Arial, sans-serif;
+}
+
+h2 {
+  letter-spacing: 1px;
+}
+
+button {
+  color: #000;
+  background-color: #f0f2f0;
+  margin: 8px;
+  padding: 8px;
+}
