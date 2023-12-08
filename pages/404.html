@@ -3,23 +3,30 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../styles/contact.css" />
+    <link rel="stylesheet" href="../styles/404.css" />
     <title>404 Page Not Found</title>
   </head>
   <body>
     <div class="container">
       <div class="navbar">
-        <img src="imgs/menu/mercedes-benz-9.svg" alt="meu-logo" class="logo" />
-        <nav>
-          <ul>
-            <li><a href="main.html">Home</a></li>
-            <li><a href="#">Find a Store</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="main.html/#contact">Contact</a></li>
-          </ul>
-        </nav>
-        <img src="imgs/menu/search.png" alt="menu" class="search-icon" />
+        <img src="../imgs/menu/logo.png" alt="meu-logo" class="logo" />
+      </div>
+      <div id="error">
+        <h1>404</h1>
+        <p>
+          We couldn't find your car, or maybe it was to fast to catch.<br />
+          Please click here to go back.
+        </p>
+        <button data-url="../index.html">Back to the Start line</button>
       </div>
     </div>
+    <script>
+      document.querySelector('button').addEventListener('click', function() {
+    var url = this.getAttribute('data-url');
+    if (url) {
+      window.location.href = url;
+    }
+  });
+    </script>
   </body>
 </html>
