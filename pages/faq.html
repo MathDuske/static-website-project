@@ -6,16 +6,15 @@
     </style>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../styles/contact.css" />
-    <link rel="stylesheet" href="../styles/main.css" />
-    <title>Contact Us</title>
+    <link rel="stylesheet" href="../styles/faq.css" />
+    <link rel="stylesheet" href="../styles/main.css">
+    <title>Velocity Motors FAQ</title>
   </head>
-
   <body>
     <header>
-      <div class="container" id="Home">
+      <div class="container">
         <div class="navbar fixed-navbar">
-          <img src="../imgs/menu/logo.png" alt="my-logo" class="logo" />
+          <img src="../imgs/menu/logo.png" alt="menu-logo" class="logo" />
           <nav>
             <ul>
               <li><a href="../index.html">Home</a></li>
@@ -27,54 +26,47 @@
           </nav>
           <img src="../imgs/menu/search.png" alt="menu" class="search-icon" />
         </div>
-        <!-- Contact section -->
-        <div class="custom-container">
-          <div class="contact-info">
-            <img src="../imgs/contact/dealer.jpg" alt="Company Image" />
-            <p>
-              Looking for more information or want to make a test drive? Submit
-              your information, and one of our representatives will contact you
-              as soon as possible. Have a simple question? Check out our
-              <a href="./faq.html">FAQ</a>.
-            </p>
-          </div>
-          <div class="contact-form">
-            <form action="#" method="post" id="contact-form">
-              <h2>Talk with our sales team.</h2>
-              <div class="form-columns">
-                <!-- Left form column -->
-                <div class="form-column">
-                  <label for="firstName">First Name:</label>
-                  <input type="text" id="firstName" name="firstName" required />
-
-                  <label for="phoneNumber">Phone Number:</label>
-                  <input
-                    type="tel"
-                    id="phoneNumber"
-                    name="phoneNumber"
-                    required
-                  />
-                  <label for="subject">Tell us what you're looking for:</label>
-                  <textarea
-                    id="subject"
-                    name="subject"
-                    rows="4"
-                    required
-                  ></textarea>
-                </div>
-                <!-- right form column -->
-                <div class="form-column">
-                  <label for="lastName">Last Name:</label>
-                  <input type="text" id="lastName" name="lastName" required />
-
-                  <label for="email">Email:</label>
-                  <input type="email" id="email" name="email" required />
-                </div>
-              </div>
-
-              <button type="submit">Submit</button>
-            </form>
-          </div>
+        <div class="faq-container">
+          <section class="faq-section">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-item">
+              <h3>1. What types of vehicles do you offer?</h3>
+              <p>
+                We specialize in high-performance and luxury vehicles, offering
+                a curated selection that includes sports cars, sedans, and SUVs.
+              </p>
+            </div>
+            <div class="faq-item">
+              <h3>2. How can I schedule a test drive?</h3>
+              <p>
+                To schedule a test drive, please visit our
+                <a href="./contact.html">Contact</a> page or call our customer
+                service at +1 (555) 777-7777.
+              </p>
+            </div>
+            <div class="faq-item">
+              <h3>3. Do you provide financing options?</h3>
+              <p>
+                Yes, we offer financing options. Please contact our finance
+                department for more information.
+              </p>
+            </div>
+            <div class="faq-item">
+              <h3>4. Are your vehicles covered by a warranty?</h3>
+              <p>
+                Yes, all our vehicles come with a standard warranty. Additional
+                extended warranty options are also available.
+              </p>
+            </div>
+            <div class="faq-item">
+              <h3>5. What are your accepted payment methods?</h3>
+              <p>
+                We accept various payment methods, including credit cards, bank
+                transfers, and financing options. Please check with our sales
+                team for specific details.
+              </p>
+            </div>
+          </section>
         </div>
       </div>
     </header>
@@ -82,9 +74,10 @@
       <div class="footer-content">
         <div class="footer-section about">
           <h3>About Us</h3>
-          <p>           
-            Velocity Motors: Your destination for premier sportive and luxury vehicles, 
-            delivering a unique blend of style, performance, and prestige.
+          <p>
+            Velocity Motors: Your destination for premier sportive and luxury
+            vehicles, delivering a unique blend of style, performance, and
+            prestige.
           </p>
         </div>
         <div class="footer-section contact">

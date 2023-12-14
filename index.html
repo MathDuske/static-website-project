@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Agbalumo&family=Bebas+Neue&family=Kdam+Thmor+Pro&family=Overpass:ital,wght@0,400;1,300&display=swap");
+    </style>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/index.css" />
-    <title>Mercedes Website</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <title>VelocityMotors</title>
   </head>
   <body>
     <header>
       <div class="container" id="Home">
-        <div class="navbar">
+        <div class="navbar fixed-navbar">
           <img
             src="imgs/menu/logo.png"
             alt="meu-logo"
@@ -18,9 +22,10 @@
           <nav>
             <ul>
               <li><a href="./index.html">Home</a></li>
-              <li><a href="./pages/404.html">Find a Store</a></li>
+              <li><a href="./pages/404.html">Find a Shop</a></li>
               <li><a href="./pages/about.html">About</a></li>
               <li><a href="./pages/contact.html">Contact</a></li>
+              <li><a href="./pages/faq.html">FAQ</a></li>
             </ul>
           </nav>
           <img src="imgs/menu/search.png" alt="menu" class="search-icon" />
@@ -45,31 +50,31 @@
               performance and timeless dynamics. Each vehicle is a harmonious blend of comfort, responsive handling, and powerful engines, 
               embodying the spirit of driving excellence.
             </p>
-            <button type="button" class="explore">Explore</button>
+            <button class="explore" data-url="404.html">Explore</button>
           </div>
           <div class="col">
-            <a href="pages/models.html" class="hidden">
+            <a href="pages/models.html">
               <div class="card card1">
                 <h5>Models</h5>
-                <p style="color: #000">See the models of our cars</p>
+                <p>See the models of our cars</p>
               </div>
             </a>
-            <a href="pages/about.html" class="hidden">
+            <a href="pages/about.html">
               <div class="card card2">
                 <h5>About</h5>
-                <p style="color: #000">Look at our history</p>
+                <p>Look at our history</p>
               </div>
             </a>
-            <a href="pages/404.html" class="hidden">
+            <a href="pages/404.html">
               <div class="card card3">
                 <h5>Find a Shop</h5>
-                <p style="color: #000">Look for the closest Dealership</p>
+                <p>Look for the closest Dealership</p>
               </div>
             </a>
-            <a href="#socialsid" class="hidden">
+            <a href="#socialsid">
               <div class="card card4">
                 <h5>Socials</h5>
-                <p style="color: #000">See the happiness of our customers</p>
+                <p>See the happiness of our customers</p>
               </div>
             </a>
           </div>
@@ -178,36 +183,38 @@
         <div class="footer-section about">
           <h3>About Us</h3>
           <p>
-            Mercedes-Benz: A legacy of luxury and innovation in automotive design. Experience excellence with our range of iconic vehicles, blending cutting-edge technology with timeless sophistication.
+            Velocity Motors: Your destination for premier sportive and luxury
+            vehicles, delivering a unique blend of style, performance, and
+            prestige.
           </p>
         </div>
         <div class="footer-section contact">
           <h3>Contact Us</h3>
-          <p>Email: fakemercedesbenz@gmail.com</p>
+          <p>Email: VelocityMotors@gmail.com</p>
           <p>Phone: +1 (555) 777-7777</p>
-          <a href="contact.html" class="contact-button custom-color"
+          <a href="pages/contact.html" class="contact-button custom-color"
             >Or click here to contact us</a
           >
         </div>
         <div class="footer-section links">
           <h3>Services</h3>
           <ul>
-            <li><a href="#">Maintenance and Repairs</a></li>
-            <li><a href="#">Mercedes Parts</a></li>
-            <li><a href="#">Vehicle Diagnostics</a></li>
-            <li><a href="#">Customization Services</a></li>
+            <li><a href="pages/404.html">Maintenance and Repairs</a></li>
+            <li><a href="pages/404.html">Vehicle Parts</a></li>
+            <li><a href="pages/404.html">Vehicle Diagnostics</a></li>
+            <li><a href="pages/404.html">Customization Services</a></li>
           </ul>
         </div>
         <div class="footer-section social">
           <h3>Follow Us</h3>
           <div class="social-icons">
-            <a href="#" target="_blank"
+            <a href="pages/404.html" target="_blank"
               ><img src="imgs/menu/icons8-facebook.svg" alt="Facebook"
             /></a>
-            <a href="#" target="_blank"
+            <a href="pages/404.html" target="_blank"
               ><img src="imgs/menu/icons8-twitter.svg" alt="Twitter"
             /></a>
-            <a href="#" target="_blank"
+            <a href="pages/404.html" target="_blank"
               ><img src="imgs/menu/icons8-instagram.svg" alt="Instagram"
             /></a>
           </div>
@@ -217,7 +224,7 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <p>&copy; 2023 Fake Mercedes Benz. All Rights Reserved.</p>
+        <p>&copy; 2023 Velocity Motors. All Rights Reserved.</p>
       </div>
     </footer>
   </body>
