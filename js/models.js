@@ -16,10 +16,7 @@ const handleOnMove = (e) => {
   const percentage = (mouseDelta / maxDelta) * -100,
     nextPercentageUnconstrained =
       parseFloat(track.dataset.prevPercentage) + percentage,
-    nextPercentage = Math.max(
-      Math.min(nextPercentageUnconstrained, 0),
-      -100
-    );
+    nextPercentage = Math.max(Math.min(nextPercentageUnconstrained, 0), -100);
 
   track.dataset.percentage = nextPercentage;
 
@@ -40,15 +37,25 @@ const handleOnMove = (e) => {
   }
 };
 
-const buttons = document.querySelectorAll('.image-container button');
+const buttons = document.querySelectorAll(".image-container button");
 
-buttons.forEach(button => {
-  button.addEventListener('click', () => {
+buttons.forEach((button) => {
+  button.addEventListener("click", () => {
     const url = button.dataset.url;
     if (url) {
       window.location.href = url;
     }
   });
+});
+
+// Handle click event on the "Explore" button
+const exploreButton = document.querySelector(".explore");
+
+exploreButton.addEventListener("click", () => {
+  const url = exploreButton.dataset.url;
+  if (url) {
+    window.location.href = url;
+  }
 });
 
 window.onmousedown = (e) => handleOnDown(e);

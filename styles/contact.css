@@ -1,17 +1,19 @@
+/* Navbar in the main.css */
+
 /* Contact form */
 .custom-container {
   display: flex;
   justify-content: space-between;
   max-width: 1200px;
   margin: 50px auto;
-  background-color: #fff;
+  background-color: var(--primaryColor);
   padding: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .contact-info {
   width: 45%;
-  font-family: "Bebas Neue", Arial, sans-serif;
+  font-family: var(--defaultFontFamily);
 }
 
 .contact-info img {
@@ -27,17 +29,17 @@
 }
 
 .contact-info a {
-  color: #007bff;
+  color: var(--thirdColor);
 }
 
 .contact-form {
   width: 45%;
-  font-family: "Overpass:ital", Arial, sans-serif;
+  font-family: var(--secondFontFamily);
 }
 
 #contact-form {
-  background-color: #007bff;
-  color: #fff;
+  background-color: var(--thirdColor);
+  color: var(--primaryColor);
   padding: 20px;
   border-radius: 8px;
 }
@@ -59,7 +61,7 @@
 label {
   display: block;
   margin-bottom: 8px;
-  color: #fff;
+  color: var(--primaryColor);
 }
 
 input,
@@ -73,20 +75,20 @@ textarea {
 }
 
 #subject {
-  width: calc(100% + 257px); /* Adjust the width to cover both columns and add some padding */
-  margin-right: -257px; /* Compensate for the extra width */
+  width: calc(100% + 257px);
+  margin-right: -257px;
   resize: vertical;
 }
 
 label[for="subject"] {
   display: block;
   margin-bottom: 8px;
-  color: #fff;
+  color: var(--primaryColor);
 }
 
 button {
-  background-color: #fff;
-  color: #007bff;
+  background-color: var(--primaryColor);
+  color: var(--thirdColor);
   padding: 12px 20px;
   border: none;
   border-radius: 4px;

@@ -1,4 +1,4 @@
-/* navbar in the main.css */
+/* Navbar in the main.css */
 
 /* images of the effect */
 #image-track {
@@ -29,7 +29,7 @@
   object-position: 100% center;
 }
 
-/* Text inside the images */
+/* Text, button and animation in the cards/imgs */
 .overlay {
   position: absolute;
   bottom: 0;
@@ -68,8 +68,8 @@
 h2,
 p,
 button {
-  color: #fff;
-  font-family: "Bebas Neue", Arial, sans-serif;
+  color: var(--primaryColor);
+  font-family: var(--defaultFontFamily);
 }
 
 h2 {
@@ -77,8 +77,8 @@ h2 {
 }
 
 button {
-  color: #000;
-  background-color: #f0f2f0;
+  color: var(--secondColor);
+  background-color: var(--primaryColor);
   margin: 8px;
   padding: 8px;
 }

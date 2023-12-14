@@ -186,3 +186,27 @@ footer {
   border-top: 1px solid #555;
   font-size: 12px;
 }
+
+/* Animations */
+
+/* Rotation animation */
+@keyframes drop-in {
+  from {
+    transform: rotate(-30deg) translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: rotate(0deg) translateY(0%);
+    opacity: 1;
+  }
+}
+
+/* slide left to right animation */
+@keyframes slide-in {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}

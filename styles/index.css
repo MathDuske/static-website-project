@@ -1,4 +1,4 @@
-/* Nav styles in main.css */
+/* Navbar in the main.css */
 
 
 /* Card of the header */
@@ -20,6 +20,8 @@
   font-size: 90px;
   font-family: var(--defaultFontFamily);
   letter-spacing: 2px;
+  animation: slide-in 1000ms;
+  animation-timing-function: linear;
 }
 
 .col p {
@@ -30,9 +32,29 @@
   line-height: 15px;
   font-style: italic;
   font-family: var(--secondFontFamily);
+  animation: slide-in 1000ms;
+  animation-timing-function: linear;
 }
+
+.explore {
+  width: 180px;
+  color: var(--secondColor);
+  font-size: 14px;
+  padding: 12px 0;
+  background: var(--primaryColor);
+  border: 0;
+  border-radius: 20px;
+  outline: none;
+  margin-top: 30px;
+  font-family: var(--defaultFontFamily);
+  animation: slide-in 1000ms;
+  animation-timing-function: linear;
+  cursor: pointer;
+}
+
 /* Cards in the header */
 .card {
+  position: relative;
   width: 200px;
   max-height: 230px;
   display: inline-block;
@@ -45,6 +67,30 @@
   background-size: cover;
   overflow: hidden;
   transition: transform 0.5s;
+  animation: drop-in 1000ms;
+}
+
+.card::before,
+.card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  pointer-events: none;
+}
+
+.card::before {
+  border-top: none;
+  border-bottom: none;
+}
+
+.card::after {
+  border-left: none;
+  border-right: none;
 }
 
 .card1 {
@@ -79,6 +125,8 @@
   font-size: 20px;
   font-family: var(--defaultFontFamily);
   letter-spacing: 1px;
+  animation: slide-in 1000ms;
+  animation-timing-function: linear;
 }
 
 .card p {
@@ -86,19 +134,6 @@
   font-size: 15px;
   color: var(--primaryColor);
   font-family: var(--defaultFontFamily);
-}
-
-.explore {
-  width: 180px;
-  color: var(--secondColor);
-  font-size: 14px;
-  padding: 12px 0;
-  background: var(--primaryColor);
-  border: 0;
-  border-radius: 20px;
-  outline: none;
-  margin-top: 30px;
-  font-family: "Bebas Neue", Arial, sans-serif;
 }
 
 .looking {
@@ -111,7 +146,7 @@
   padding: 60px;
   color: var(--secondColor);
   font-size: 35px;
-  font-family: "Bebas Neue", Arial, sans-serif;
+  font-family: var(--defaultFontFamily);
   text-align: center;
 }
 
