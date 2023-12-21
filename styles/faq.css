@@ -40,7 +40,7 @@
   font-family: var(--secondFontFamily);
 }
 
-/* Estilos para dispositivos menores, como tablets e smartphones */
+/* for cellphones and tablets */
 @media only screen and (max-width: 768px) {
   .faq-section {
     padding: 10px;
