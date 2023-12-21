@@ -1,71 +1,19 @@
-const track = document.getElementById("image-track");
+document.addEventListener('DOMContentLoaded', function () {
+  const exploreButtons = document.querySelectorAll('.explore');
+  const overlayButtons = document.querySelectorAll('.image-container button');
 
-const handleOnDown = (e) => (track.dataset.mouseDownAt = e.clientX);
+  exploreButtons.forEach((button) => {
+    button.addEventListener('click', handleButtonClick);
+  });
 
-const handleOnUp = () => {
-  track.dataset.mouseDownAt = "0";
-  track.dataset.prevPercentage = track.dataset.percentage;
-};
+  overlayButtons.forEach((button) => {
+    button.addEventListener('click', handleButtonClick);
+  });
 
-const handleOnMove = (e) => {
-  if (track.dataset.mouseDownAt === "0") return;
-
-  const mouseDelta = parseFloat(track.dataset.mouseDownAt) - e.clientX,
-    maxDelta = window.innerWidth / 2;
-
-  const percentage = (mouseDelta / maxDelta) * -100,
-    nextPercentageUnconstrained =
-      parseFloat(track.dataset.prevPercentage) + percentage,
-    nextPercentage = Math.max(Math.min(nextPercentageUnconstrained, 0), -100);
-
-  track.dataset.percentage = nextPercentage;
-
-  track.animate(
-    {
-      transform: `translate(${nextPercentage}%, -50%)`,
-    },
-    { duration: 1200, fill: "forwards" }
-  );
-
-  for (const image of track.getElementsByClassName("image")) {
-    image.animate(
-      {
-        objectPosition: `${100 + nextPercentage}% center`,
-      },
-      { duration: 1200, fill: "forwards" }
-    );
-  }
-};
-
-const buttons = document.querySelectorAll(".image-container button");
-
-buttons.forEach((button) => {
-  button.addEventListener("click", () => {
-    const url = button.dataset.url;
+  function handleButtonClick(event) {
+    const url = event.currentTarget.dataset.url;
     if (url) {
       window.location.href = url;
     }
-  });
-});
-
-// Handle click event on the "Explore" button
-const exploreButton = document.querySelector(".explore");
-
-exploreButton.addEventListener("click", () => {
-  const url = exploreButton.dataset.url;
-  if (url) {
-    window.location.href = url;
   }
 });
-
-window.onmousedown = (e) => handleOnDown(e);
-
-window.ontouchstart = (e) => handleOnDown(e.touches[0]);
-
-window.onmouseup = (e) => handleOnUp(e);
-
-window.ontouchend = (e) => handleOnUp(e.touches[0]);
-
-window.onmousemove = (e) => handleOnMove(e);
-
-window.ontouchmove = (e) => handleOnMove(e.touches[0]);

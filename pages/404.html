@@ -1,35 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Agbalumo&family=Bebas+Neue&family=Kdam+Thmor+Pro&family=Overpass:ital,wght@0,400;1,300&display=swap");
-    </style>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../styles/404.css" />
-    <title>404 Page Not Found</title>
-  </head>
-  <body>
-    <div class="container">
-      <div class="navbar">
-        <img src="../imgs/menu/logo.png" alt="meu-logo" class="logo" />
-      </div>
-      <div id="error">
-        <h1>404</h1>
-        <p>
-          We couldn't find your car, or maybe it was too fast to catch.<br />
-          Please click here to go back.
-        </p>
-        <button data-url="../index.html">Back to the Start line</button>
-      </div>
+
+<head>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Agbalumo&family=Bebas+Neue&family=Kdam+Thmor+Pro&family=Overpass:ital,wght@0,400;1,300&display=swap");
+  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../styles/404.css">
+  <title>404 Page Not Found</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="navbar">
+      <img src="../imgs/menu/logo.png" alt="meu-logo" class="logo">
     </div>
-    <script>
-      document.querySelector('button').addEventListener('click', function() {
-    var url = this.getAttribute('data-url');
-    if (url) {
-      window.location.href = url;
-    }
-  });
-    </script>
-  </body>
+    <div id="error">
+      <h1>404</h1>
+      <p>
+        We couldn't find your car, or maybe it was too fast to catch.<br>
+        Please click here to go back.
+      </p>
+      <button data-url="../index.html">Back to the Start line</button>
+    </div>
+  </div>
+  <script>
+    document.querySelector('button').addEventListener('click', function () {
+      var url = this.getAttribute('data-url');
+      if (url) {
+        window.location.href = url;
+      }
+    });
+  </script>
+</body>
+
 </html>

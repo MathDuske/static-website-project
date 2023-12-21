@@ -14,7 +14,7 @@
 }
 
 .overview-section {
-    font-family: var(--secondFontFamily);
+  font-family: var(--secondFontFamily);
 }
 
 .about-section {
@@ -38,4 +38,5 @@
   line-height: 1.6;
   margin-bottom: 16px;
 }
+
 /* Footer Section in the main.css */

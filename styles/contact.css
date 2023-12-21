@@ -1,8 +1,9 @@
-/* Navbar in the main.css */
+/* Nav form in the main.css */
 
-/* Contact form */
+/* Custom Container */
 .custom-container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   max-width: 1200px;
   margin: 50px auto;
@@ -11,15 +12,16 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.contact-info {
-  width: 45%;
-  font-family: var(--defaultFontFamily);
+/* Contact Info */
+.contact-info,
+.contact-form {
+  width: 100%;
+  margin-bottom: 20px;
 }
 
 .contact-info img {
   width: 100%;
   height: auto;
-  margin-bottom: 20px;
 }
 
 .contact-info p {
@@ -32,11 +34,7 @@
   color: var(--thirdColor);
 }
 
-.contact-form {
-  width: 45%;
-  font-family: var(--secondFontFamily);
-}
-
+/* Contact Form */
 #contact-form {
   background-color: var(--thirdColor);
   color: var(--primaryColor);
@@ -51,11 +49,12 @@
 
 .form-columns {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .form-column {
-  width: 48%;
+  width: 100%;
+  margin-bottom: 16px;
 }
 
 label {
@@ -75,8 +74,8 @@ textarea {
 }
 
 #subject {
-  width: calc(100% + 257px);
-  margin-right: -257px;
+  width: 100%;
+  margin-right: 0;
   resize: vertical;
 }
 
@@ -100,4 +99,17 @@ button:hover {
   background-color: #ddd;
 }
 
-/* Footer Section in the main.css */
+/* Media Queries */
+@media (min-width: 600px) {
+
+  .contact-info,
+  .contact-form {
+    width: 48%;
+  }
+
+  .form-column {
+    width: calc(48% - 8px);
+    margin-right: 8px;
+    margin-bottom: 0;
+  }
+}

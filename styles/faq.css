@@ -3,7 +3,7 @@
 /* FAQ styles */
 .faq-container {
   width: 100%;
-  padding: 20px 20px;
+  padding: 20px;
   box-sizing: border-box;
 }
 
@@ -24,6 +24,7 @@
 }
 
 .faq-item {
+  cursor: pointer;
   margin-bottom: 20px;
 }
 
@@ -33,9 +34,29 @@
 }
 
 .faq-item p {
+  display: none;
   font-size: 14px;
   line-height: 1.6;
   font-family: var(--secondFontFamily);
+}
+
+/* Estilos para dispositivos menores, como tablets e smartphones */
+@media only screen and (max-width: 768px) {
+  .faq-section {
+    padding: 10px;
+  }
+
+  .faq-section h2 {
+    font-size: 28px;
+  }
+
+  .faq-item h3 {
+    font-size: 16px;
+  }
+
+  .faq-item p {
+    font-size: 12px;
+  }
 }
 
 /* Footer styles in main.css */

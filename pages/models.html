@@ -1,188 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Agbalumo&family=Bebas+Neue&family=Kdam+Thmor+Pro&family=Overpass:ital,wght@0,400;1,300&display=swap");
-    </style>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../styles/models.css" />
-    <link rel="stylesheet" href="../styles/main.css" />
-    <title>Mercedes Models</title>
-  </head>
-  <body>
-    <header>
-      <div class="container" id="Home">
-        <div class="navbar fixed-navbar">
-          <img
-            src="../imgs/menu/logo.png"
-            alt="meu-logo"
-            class="logo"
-          />
-          <nav>
-            <ul>
-              <li><a href="../index.html">Home</a></li>
-              <li><a href="./404.html">Find a Shop</a></li>
-              <li><a href="./about.html">About</a></li>
-              <li><a href="./contact.html">Contact</a></li>
-              <li><a href="./faq.html">FAQ</a></li>
-            </ul>
-          </nav>
-          <img src="../imgs/menu/search.png" alt="menu" class="search-icon" />
-        </div>
-      </div>
-    </header>
-    <main>
-      <div class="models">
-        <div id="image-track" data-mouse-down-at="0" data-prev-percentage="0">
-          <div class="image-container">
-            <img
-              class="image"
-              src="../imgs/models/electric.jpg"
-              draggable="false"
-              alt="car"
-            />
-            <div class="overlay">
-              <h2>Electric models</h2>
-              <p>
-                Mercedes EQ line includes electric SUVs like EQC, EQA, and EQB,
-                along with the luxury sedan EQS and a performance variant, the
-                Mercedes-AMG EQS.
-              </p>
-              <button data-url="404.html">View Details</button>
-            </div>
-          </div>
-          <div class="image-container">
-            <img
-              class="image"
-              src="../imgs/models/gls.jpg"
-              draggable="false"
-              alt="car"
-            />
-            <div class="overlay">
-              <h2>GLS Models</h2>
-              <p>
-                Represent the pinnacle of luxury SUVs, offering a combination of
-                opulence, advanced technology, and versatile performance.
-              </p>
-              <button data-url="404.html">View Details</button>
-            </div>
-          </div>
-          <div class="image-container">
-            <img
-              class="image"
-              src="../imgs/models/mercedesamg.jpg"
-              draggable="false"
-              alt="car"
-            />
-            <div class="overlay">
-              <h2>AMG Models</h2>
-              <p>
-                The high-performance, with precision engineering and
-                exhilarating driving experiences.
-              </p>
-              <button data-url="404.html">View Details</button>
-            </div>
-          </div>
-          <div class="image-container">
-            <img
-              class="image"
-              src="../imgs/models/convertible.jpg"
-              draggable="false"
-              alt="car"
-            />
-            <div class="overlay">
-              <h2>Convertible Models</h2>
-              <p>
-                that blended the brand's signature luxury with open-top driving
-                enjoyment.
-              </p>
-              <button data-url="404.html">View Details</button>
-            </div>
-          </div>
-          <div class="image-container">
-            <img
-              class="image"
-              src="../imgs/models/oldmercedes.jpg"
-              draggable="false"
-              alt="car"
-            />
-            <div class="overlay">
-              <h2>Vintage Models</h2>
-              <p>
-                Produced a range of notable models, each with its own
-                distinctive features and contributions to the automotive
-                landscape.
-              </p>
-              <button data-url="404.html">View Details</button>
-            </div>
-          </div>
-          <div class="image-container">
-            <img
-              class="image"
-              src="../imgs/models/wagon2.jpg"
-              draggable="false"
-              alt="car"
-            />
-            <div class="overlay">
-              <h2>Class Wagon</h2>
-              <p>
-                Combine the versatility of a wagon with the luxury and
-                performance synonymous with the brand.
-              </p>
-              <button data-url="404.html">View Details</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </main>
-    <script src="../js/models.js"></script>
-    <footer>
-      <div class="footer-content">
-        <div class="footer-section about">
-          <h3>About Us</h3>
+
+<head>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Agbalumo&family=Bebas+Neue&family=Kdam+Thmor+Pro&family=Overpass:ital,wght@0,400;1,300&display=swap");
+  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../styles/models.css">
+  <link rel="stylesheet" href="../styles/main.css">
+  <title>Mercedes Models</title>
+</head>
+
+<body>
+  <div class="container" id="Home">
+    <div class="navbar fixed-navbar">
+      <img src="../imgs/menu/logo.png" alt="meu-logo" class="logo">
+      <nav>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="./404.html">Find a Shop</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+          <li><a href="./faq.html">FAQ</a></li>
+        </ul>
+      </nav>
+      <img src="../imgs/menu/search.png" alt="menu" class="search-icon">
+    </div>
+
+    <div class="models">
+      <div class="image-container">
+        <img class="image" src="../imgs/models/electric.jpg" draggable="false" alt="car">
+        <div class="overlay">
+          <h2>Electric models</h2>
           <p>
-            Mercedes-Benz: A legacy of luxury and innovation in automotive design. Experience excellence with our range of iconic vehicles, blending cutting-edge technology with timeless sophistication.
+            Mercedes EQ line includes electric SUVs like EQC, EQA, and EQB,
+            along with the luxury sedan EQS and a performance variant, the
+            Mercedes-AMG EQS.
           </p>
-        </div>
-        <div class="footer-section contact">
-          <h3>Contact Us</h3>
-          <p>Email: fakemercedesbenz@gmail.com</p>
-          <p>Phone: +1 (555) 777-7777</p>
-          <a href="contact.html" class="contact-button custom-color"
-            >Or click here to contact us</a
-          >
-        </div>
-        <div class="footer-section links">
-          <h3>Services</h3>
-          <ul>
-            <li><a href="#">Maintenance and Repairs</a></li>
-            <li><a href="#">Mercedes Parts</a></li>
-            <li><a href="#">Vehicle Diagnostics</a></li>
-            <li><a href="#">Customization Services</a></li>
-          </ul>
-        </div>
-        <div class="footer-section social">
-          <h3>Follow Us</h3>
-          <div class="social-icons">
-            <a href="#" target="_blank"
-              ><img src="../imgs/menu/icons8-facebook.svg" alt="Facebook"
-            /></a>
-            <a href="#" target="_blank"
-              ><img src="../imgs/menu/icons8-twitter.svg" alt="Twitter"
-            /></a>
-            <a href="#" target="_blank"
-              ><img src="../imgs/menu/icons8-instagram.svg" alt="Instagram"
-            /></a>
-          </div>
-        </div>
-        <div class="footer-section logo">
-          <img src="../imgs/menu/logo.png" alt="Your Logo" />
+          <button data-url="404.html">View Details</button>
         </div>
       </div>
-      <div class="footer-bottom">
-        <p>&copy; 2023 Fake Mercedes Benz. All Rights Reserved.</p>
+      <div class="image-container">
+        <img class="image" src="../imgs/models/gls.jpg" draggable="false" alt="car">
+        <div class="overlay">
+          <h2>GLS Models</h2>
+          <p>
+            Represent the pinnacle of luxury SUVs, offering a combination of
+            opulence, advanced technology, and versatile performance.
+          </p>
+          <button data-url="404.html">View Details</button>
+        </div>
       </div>
-    </footer>
-  </body>
+      <div class="image-container">
+        <img class="image" src="../imgs/models/mercedesamg.jpg" draggable="false" alt="car">
+        <div class="overlay">
+          <h2>AMG Models</h2>
+          <p>
+            The high-performance, with precision engineering and
+            exhilarating driving experiences.
+          </p>
+          <button data-url="404.html">View Details</button>
+        </div>
+      </div>
+      <div class="image-container">
+        <img class="image" src="../imgs/models/convertible.jpg" draggable="false" alt="car">
+        <div class="overlay">
+          <h2>Convertible Models</h2>
+          <p>
+            that blended the brand's signature luxury with open-top driving
+            enjoyment.
+          </p>
+          <button data-url="404.html">View Details</button>
+        </div>
+      </div>
+      <div class="image-container">
+        <img class="image" src="../imgs/models/oldmercedes.jpg" draggable="false" alt="car">
+        <div class="overlay">
+          <h2>Vintage Models</h2>
+          <p>
+            Elevate your collection with vintage card models—timeless pieces that encapsulate the essence of classic
+            design and cultural heritage.
+          </p>
+          <button data-url="404.html">View Details</button>
+        </div>
+      </div>
+      <div class="image-container">
+        <img class="image" src="../imgs/models/wagon2.jpg" draggable="false" alt="car">
+        <div class="overlay">
+          <h2>Class Wagon</h2>
+          <p>
+            Combine the versatility of a wagon with the luxury and
+            performance synonymous with the brand.
+          </p>
+          <button data-url="404.html">View Details</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="../js/models.js"></script>
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section about">
+        <h3>About Us</h3>
+        <p>
+          Mercedes-Benz: A legacy of luxury and innovation in automotive design. Experience excellence with our range of
+          iconic vehicles, blending cutting-edge technology with timeless sophistication.
+        </p>
+      </div>
+      <div class="footer-section contact">
+        <h3>Contact Us</h3>
+        <p>Email: fakemercedesbenz@gmail.com</p>
+        <p>Phone: +1 (555) 777-7777</p>
+        <a href="contact.html" class="contact-button custom-color">Or click here to contact us</a>
+      </div>
+      <div class="footer-section links">
+        <h3>Services</h3>
+        <ul>
+          <li><a href="#">Maintenance and Repairs</a></li>
+          <li><a href="#">Mercedes Parts</a></li>
+          <li><a href="#">Vehicle Diagnostics</a></li>
+          <li><a href="#">Customization Services</a></li>
+        </ul>
+      </div>
+      <div class="footer-section social">
+        <h3>Follow Us</h3>
+        <div class="social-icons">
+          <a href="#" target="_blank"><img src="../imgs/menu/icons8-facebook.svg" alt="Facebook"></a>
+          <a href="#" target="_blank"><img src="../imgs/menu/icons8-twitter.svg" alt="Twitter"></a>
+          <a href="#" target="_blank"><img src="../imgs/menu/icons8-instagram.svg" alt="Instagram"></a>
+        </div>
+      </div>
+      <div class="footer-section logo">
+        <img src="../imgs/menu/logo.png" alt="Your Logo" />
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2023 Fake Mercedes Benz. All Rights Reserved.</p>
+    </div>
+  </footer>
+</body>
+
 </html>
