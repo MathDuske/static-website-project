@@ -471,7 +471,7 @@
 
   .col {
     flex: 1;
-    margin: 10px;
+    margin-right: 60px;
   }
 
   .col h1 {
